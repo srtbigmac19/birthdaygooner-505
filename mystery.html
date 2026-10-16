@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Epstein Files</title>
+
+<style>
+body {
+  background: #0b0d18;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+  text-align: center;
+}
+.card {
+  max-width: 650px;
+  margin: auto;
+  padding: 20px;
+  animation: fade 2s ease;
+}
+h1 { letter-spacing: 3px; }
+p { color: #c2c7dc; line-height: 1.9; }
+#message {
+  margin-top: 35px;
+  font-size: 18px;
+  line-height: 1.9;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+button {
+  margin-top: 30px;
+  padding: 14px 25px;
+  border: 1px solid #777da8;
+  border-radius: 30px;
+  background: transparent;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+button:disabled { opacity: 0.7; }
+@keyframes fade {
+  from {opacity: 0; transform: translateY(15px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+</style>
+</head>
+
+<body>
+<div class="card">
+  <h1>✦ THE EPSTEIN FILES… ✦</h1>
+  <p>Something is waiting for u papi…<br>Enter Diddy World below.</p>
+  <div id="message">|</div>
+  <button id="btn" onclick="reveal()">Enter Diddy World</button>
+</div>
+
+<script>
+async function reveal() {
+  const secret = `Well Well Well. So long little jolly fn.
+All the sussy shit is cap pause no Diddy. Just wanna say fuck you birthday neegy.
+Sike]/ Im jerking.
+
+Have a great fucking birthday da goat.
+You special one.
+Enough of that shit just lemme stick it in you
+here's yo present.
+10 9 8 7 6 5 4 3 2 1 0...
+
+A 5 doollhair gift card do not redeem mam
+1W3TFP0XRV798V8L
+
+A mid amazon gift card
+5U27-L48YXM-5JBT
+
+And lastly your gonna get a dih reveal
+O block fucking expensive hard working on the hub gift card styll two twos my word Brodie
+RE-X NHC-K3YY-YMAY-ATNT
+
+LMK if it works because you need it bro
+Cya top g spend a good day on goofing trust.`;
+
+  const message = document.getElementById("message");
+  const btn = document.getElementById("btn");
+
+  btn.disabled = true;
+  btn.textContent = "Revealing...";
+  message.textContent = "";
+
+  await new Promise(resolve => setTimeout(resolve, 3000));
+
+  for (const letter of secret) {
+    message.textContent += letter;
+    await new Promise(resolve => setTimeout(resolve, 100));
+  }
+
+  btn.textContent = "✦ goon leaks revealed ✦";
+}
+</script>
+</body>
+</html>
